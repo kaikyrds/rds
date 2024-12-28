@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rds.line - Soluções Digitais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>rds.line</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-mobile" id="menu-mobile">
+                <button id="menu-toggle" class="menu-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção inicial -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bem-vindo à rds.line</h2>
+            <p>Transformamos ideias em presença digital! Sites, vídeos e anúncios de impacto.</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa especializada em soluções digitais: criação de sites, vídeos, anúncios e muito mais para destacar sua marca no mundo online.</p>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="grid">
+                <div class="card">Criação de Sites</div>
+                <div class="card">Edição de Vídeos</div>
+                <div class="card">Anúncios Online</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <section id="galeria">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <!-- Adicione imagens aqui -->
+                <img src="imagem1.jpg" alt="Imagem de site criado">
+                <img src="imagem2.jpg" alt="Imagem de edição de vídeo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 rds.line. Todos os direitos reservados.</p>
+            <div class="social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Função para exibir ou esconder o menu em dispositivos móveis
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuMobile = document.getElementById('menu-mobile');
+
+        menuToggle.addEventListener('click', () => {
+            menuMobile.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
